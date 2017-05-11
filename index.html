@@ -1,0 +1,76 @@
+
+<!--  Copyrights to Sagi Friedman 11/05/2017 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>DocoVOD</title>
+</head>
+<body>
+<div id="mainvod">
+<h1>Welcome To VOD Web Service</h1>
+
+<h3>Get all from VOD json code:</h3>
+
+<p><a target="_blank" href="https://targil020170.herokuapp.com/tvShow">
+    https://targil020170.herokuapp.com/tvShow</a></p><br>
+
+
+
+
+<h3>Filter -> can choose year and language from the json
+ file ('year' and 'language'):</h3>
+
+<p><a target="_blank" href="https://targil020170.herokuapp.com/getstatuslangageTvshow/1990/russian">
+
+    https://targil020170.herokuapp.com/getstatuslangageTvshow/1990/russian</a></p><br><br>
+
+
+
+
+
+<h3>POST will give you back tv show by id (POST 'tvId' param required):</h3>
+
+<p><a target="_blank" href="https://targil020170.herokuapp.com/S_tvshow">
+
+    https://targil020170.herokuapp.com/S_tvshow</a></p><br>
+
+
+</div>
+<div id="data">
+    <h3>Data Model Example:</h3>
+    <p>
+
+      "children" : [
+      {
+         "id":1,
+         "year":1990,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Garfield & Friends"
+      },
+        
+      {
+         "id":2,
+         "year":2012,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Power Rangers"
+      },
+      
+      {
+         "id":3,
+         "language": ["English","russian","Hebrow"],
+         "showName": "The Magic School Bus"
+      },
+
+      {
+         "id":4,
+         "year":2009,
+         "language": ["English","russian","Hebrow"],
+         "showName": "SpongeBob SquarePants"
+      } 
+   ],
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background: url(vod.jpg) no-repeat center;
+    padding-left: 1%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+h1 {font-size: 34px;
+    color:red;}
+h3 {font-size: 16px;}
+p  {font-size: 13px;}
+#mainvod {
+    background: red;
+    max-width: 500px;
+    padding: 10px;
+    margin-left: 40px;
+    background-color: gray;
+    border-radius:10px;
+}
+#data {
+    background: #cccccc; max-width: 350px;
+    padding: 10px;
+    margin-left: 40px;
+    background-color: gray;
+    border-radius:15px;
+    margin-top: 40px;
+}

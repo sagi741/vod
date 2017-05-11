@@ -1,0 +1,27 @@
+body {
+   /* background: url(vod.jpg) no-repeat center center fixed;*/
+   background: url(vod.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1 {font-size: 38px;}
+h3 {font-size: 19px;}
+p  {font-size: 13px;}
+#main {
+    background: #cccccc;
+    max-width: 500px;
+    padding: 10px;
+    margin-left: 40px;
+    background-color: gray;
+    border-radius:10px;
+}
+#data {
+    background: #cccccc; max-width: 350px;
+    padding: 10%;
+    margin-left: 5%;
+    background-color: red !important;
+    border-radius:15px;
+    margin-top: 40%;
+}
