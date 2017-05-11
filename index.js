@@ -21,6 +21,11 @@ app.get('/',
         res.sendFile(`${__dirname}/index.html`);
     });
 
+app.get('/css/main.css',
+    (req,res) => {
+        res.sendFile(`${__dirname}/css/main.css`);
+    });
+
 // give me all the json//
 app.get('/tvShow',     
     (req,res) => {
