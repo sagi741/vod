@@ -26,6 +26,12 @@ app.get('/css/main.css',
         res.sendFile(`${__dirname}/css/main.css`);
     });
 
+app.get('/css/vod.jpg',
+    (req,res) => {
+        res.sendFile(`${__dirname}/css/vod.jpg`);
+    });
+
+
 // give me all the json//
 app.get('/tvShow',     
     (req,res) => {
