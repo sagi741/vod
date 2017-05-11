@@ -1,0 +1,61 @@
+{
+   "tvShows":{
+   "children" : [
+      {
+         "id":1,
+         "year":1990,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Garfield & Friends"
+      },
+		
+	  {
+         "id":2,
+         "year":2012,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Power Rangers"
+      },
+      
+      {
+         "id":3,
+         "language": ["English","russian","Hebrow"],
+         "showName": "The Magic School Bus"
+      },
+
+      {
+         "id":4,
+         "year":2009,
+         "language": ["English","russian","Hebrow"],
+         "showName": "SpongeBob SquarePants"
+      }	
+   ],
+   "Adult": [
+      {
+         "id":5,
+         "year":1992,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Torchwood"
+      },
+		
+	  {
+         "id":6,
+         "year":2001,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Spartacus"
+      },
+      
+      {
+         "id":7,
+         "year":2013,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Hawaii five-O"
+      },
+
+      {
+         "id":8,
+         "year":1999,
+         "language": ["English","russian","Hebrow"],
+         "showName": "Game of thrones"
+      }	
+   ]
+}
+}
