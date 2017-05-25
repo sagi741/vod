@@ -2,20 +2,19 @@
 
 
 'use strice';
-var data = require("./data/language.json");
+
 
 class Client{
 
-    constructor(name,id){
-        this.name = name;
-        this.id = id;
+    constructor(datastore){
+        this.datastore = datastore
     }   
 
 
     /* will give me all the json file, from
      tvShows (father of my json array)*/
     tvShow(){ 
-        return {"orderd tv show" : data.tvShows};
+        return {"orderd tv show" : this.datastore.tvShows};
     }
 
     //give me the tv show by id
@@ -23,16 +22,16 @@ class Client{
     Tvshowid(tvId){ 
         let found = false;
 
-        for(let i in data.tvShows.children){
-            var orderTvshow = data.tvShows.children[i];
+        for(let i in this.datastore.tvShows.children){
+            var orderTvshow = this.datastore.tvShows.children[i];
             if(orderTvshow.id == tvId){
                 console.log(`Tv show found: ${orderTvshow.name}`);
                 found = true;
                 return {"ordered tv show":orderTvshow};
             }
         } 
-        for(let i in data.tvShows.Adult){
-            var orderTvshow = data.tvShows.Adult[i];
+        for(let i in this.datastore.tvShows.Adult){
+            var orderTvshow = this.datastore.tvShows.Adult[i];
             if(orderTvshow.id == tvId){
                 console.log(`Tv show found: ${orderTvshow.name}`);
                 found = true;
@@ -49,8 +48,8 @@ class Client{
     file and its will give you back with filter*/
     getstatuslangageTvshow(year,language){
         let found = false;
-        for(let i in data.tvShows.children){
-            var orderTvshow = data.tvShows.children[i];
+        for(let i in this.datastore.tvShows.children){
+            var orderTvshow = this.datastore.tvShows.children[i];
             if(orderTvshow.year == year){
                 console.log("inside 1");
                 for (let i in orderTvshow.language)
@@ -68,7 +67,7 @@ class Client{
     }
 };
 
-module.exports =function (name,id){
-    var newClient = new Client(name,id);
+module.exports =function (datastore){
+    var newClient = new Client(datastore);
     return newClient;
 }
